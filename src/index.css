@@ -1,0 +1,101 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle at top, #1e293b, #020617 60%, #000);
+  color: #f8fafc;
+  font-family: system-ui, sans-serif;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.header {
+  padding: 1rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  background: linear-gradient(120deg, #fb7185, #a855f7, #38bdf8, #a3e635);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* Main area */
+.main-area {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Counter box */
+.counter-box {
+  background: rgba(15, 23, 42, 0.7);
+  padding: 2rem;
+  border-radius: 18px;
+  width: 320px;
+  text-align: center;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+.counter-display {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(120deg, #a855f7, #38bdf8, #fb7185);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: 600;
+  color: #020617;
+}
+
+.btn.inc {
+  background: linear-gradient(120deg, #38bdf8, #a3e635);
+}
+
+.btn.dec {
+  background: linear-gradient(120deg, #fb7185, #f43f5e);
+}
+
+.btn.reset {
+  background: linear-gradient(120deg, #a855f7, #6366f1);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.warning {
+  color: #fb7185;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
